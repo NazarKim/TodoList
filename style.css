@@ -1,0 +1,132 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #363636;
+    background-image: url("v830-sasi-29.jpg");
+}
+*{
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+}
+.task-list {
+    width: 500px;
+}
+
+#start-message {
+    margin: 10px;
+    color: white;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 3px 8px;
+    background-color: white;
+    height: 40px; /* Задаем фиксированную высоту для div */
+    overflow: hidden; /* Скрываем содержимое, выходящее за рамки div */
+    word-break: break-word; /* Разбиваем длинные слова на несколько строк */
+    margin-bottom: 15px;
+}
+
+.task p {
+    margin-left: 4px;
+    margin-right: 40px; /* Учитываем ширину картинок remove и change */
+}
+
+.completed {
+    background-color: green;
+    color: white;
+}
+
+.completed p {
+    text-decoration: line-through;
+}
+
+.input-panel {
+    width: 500px;
+    margin: 20px;
+    display: flex;
+}
+
+.input-panel button {
+    padding: 4px;
+    width: 50%;
+}
+
+.input-panel input {
+    height: 30px;
+    width: 100%;
+    padding: 10px;
+}
+.containert{
+    display: flex;
+    justify-content: center;
+}
+.q{
+    display: flex;
+    justify-content: center;
+}
+button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #a4a4a4;
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    margin-left: 50px;
+}
+
+button:disabled {
+    pointer-events: none;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+main{
+    height: 100vh;
+    margin: 0 500px 0 500px;
+    border-right: 5px solid white;
+    border-left: 5px solid white;
+}
+.remove-image{
+    width: 30px;
+    cursor: pointer;
+}
+.change-image{
+    cursor: pointer;
+    width: 20px;
+    padding-left: 20px;
+}
+.image-container{
+    display: flex;
+    align-items: center;
+    margin-left: 500px;
+    position: absolute;
+
+}
